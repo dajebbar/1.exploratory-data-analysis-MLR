@@ -27,5 +27,22 @@ Due to privacy and logistic issues, only physicochemical and sensory variables a
 
 ![Dataset][2]
 
+# Evaluating and improving the model
+
+#### Backward Elimination
+
+- Step 1 - select the significance level (for example, SL = 0.05)
+- Step 2 - fit the model with all independent variables
+- Step 3 - choose independent variable with highest P-value, if P-value > SL , go to step 4, otherwise the model is done.
+- Step 4 - remove the independent variable.
+- Step 5 - fit model without this variable and go to step 3.
+
+# Analyzing the result
+
+![predicted wine result][3]
+
+In general, we can conclude that the results obtained in the context of the experiment considered are not very applicable in practice. The model under study must be refined or revised.
+
 [1]: https://en.wikipedia.org/wiki/Vinho_Verde
 [2]: img/dataset.PNG
+[3]: img/predicted_result.png
